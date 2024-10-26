@@ -8,12 +8,7 @@
   --gray-900: oklch(19.37% 0.006 300.98);
   --gray-700: oklch(36.98% 0.014 302.71);
   --gray-400: oklch(70.9% 0.015 304.04);
-}
-
-body {
-  height: 200vh;
-  margin: 0;
-  color: var(--gray-900);
+  --white: oklch(100% 0.001 0);
 }
 
 header {
@@ -25,10 +20,10 @@ header {
 
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--gray-400);
+  background-color: rgba(25, 0, 0, 0.3);
   width: 80%;
   margin: 0 auto;
   border-radius: 10px;
@@ -45,22 +40,23 @@ nav img {
 
 ul {
   list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 ul li {
-  margin: 0 20px;
+  margin: 0 1.25rem;
 }
 
 ul li a {
   text-decoration: none;
-  color: var(--gray-900);
+  color: var(--white);
   font-weight: bold;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li a:focus {
   text-decoration: underline;
   color: var(--bright-blue);
   text-transform: uppercase;
@@ -72,13 +68,13 @@ ul li a:hover {
   padding: 15px;
   margin: 15px 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tabela-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px 10px;
+  padding: 10px 30px;
 }
 
 table {
